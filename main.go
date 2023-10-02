@@ -18,7 +18,7 @@ var todos = []todo{
 	{ID: "3", Item: "Record Video", Completed: false},
 }
 
-func getTodo(contex *gin.Context) {
+func getTodos(contex *gin.Context) {
 	contex.IndentedJSON(http.StatusOK, todos)
 }
 
@@ -36,7 +36,7 @@ func addTodo(context *gin.Context) {
 
 func main() {
 	router := gin.Default() // The server
-	router.GET("/todos", getTodo)
+	router.GET("/todos", getTodos)
 	router.POST("/todos", addTodo)
 	router.Run("localhost:9090")
 }
