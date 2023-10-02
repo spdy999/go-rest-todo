@@ -28,6 +28,8 @@ GET
 
 ```
 
+---
+
 GET
 `/todos/:id` : `id=1`
 
@@ -51,6 +53,8 @@ GET
 }
 ```
 
+---
+
 PATCH
 `/todos/:id` : `id=1`
 
@@ -63,6 +67,8 @@ PATCH
     "completed": false           <=== this will be flipped
 }
 ```
+
+---
 
 POST
 `/todos`
