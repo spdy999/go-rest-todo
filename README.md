@@ -51,6 +51,19 @@ GET
 }
 ```
 
+PATCH
+`/todos/:id` : `id=1`
+
+- res
+
+```
+{
+    "id": "1",
+    "item": "Clean Room",
+    "completed": false           <=== this will be flipped
+}
+```
+
 POST
 `/todos`
 
