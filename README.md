@@ -28,6 +28,29 @@ GET
 
 ```
 
+GET
+`/todos/:id` : `id=1`
+
+- res
+
+```
+{
+    "id": "1",
+    "item": "Clean Room",
+    "completed": false
+}
+```
+
+`/todos/:id` : `id=10`
+
+- res
+
+```
+{
+    "message": "Todo not found"
+}
+```
+
 POST
 `/todos`
 
@@ -45,8 +68,8 @@ POST
 
 ```
 {
-    "ID": "1",
-    "Item": "Make bed",
-    "Completed": false
+    "id": "1",
+    "item": "Make bed",
+    "completed": false
 }
 ```
