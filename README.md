@@ -5,7 +5,7 @@ REST Api
 GET
 `/todos`
 
-- resp
+- res
 
 ```
 [
@@ -30,3 +30,23 @@ GET
 
 POST
 `/todos`
+
+- req
+
+```
+{
+    "id": "1",
+    "item": "Make bed",
+    "completed": false
+}
+```
+
+- res
+
+```
+{
+    "ID": "1",
+    "Item": "Make bed",
+    "Completed": false
+}
+```
